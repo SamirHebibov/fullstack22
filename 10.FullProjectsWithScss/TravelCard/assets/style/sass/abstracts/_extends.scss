@@ -1,0 +1,11 @@
+.header{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+.Card{
+    border-radius: .25rem;
+}
+%grid{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}

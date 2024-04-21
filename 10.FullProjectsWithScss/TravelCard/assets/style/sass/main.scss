@@ -1,0 +1,8 @@
+@import "./base/resets";
+@import "./layout/navbar";
+@import "./layout/header";
+@import "./layout/content";
+.container{
+    background-color: lightgrey;
+    height: 60rem;
+}

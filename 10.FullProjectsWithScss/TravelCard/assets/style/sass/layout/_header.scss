@@ -1,0 +1,20 @@
+@use "./../abstracts/variables" as *;  //variables-i burada istifade etmek ucun use etdim 
+@use "./../abstracts/mixin" as *; //mixin-i burada istifade etmek ucun use etdim
+@use "./../abstracts/extends" as *;  //extends-i burada istifade etmek ucun use etdim
+#section2{
+    margin-top: $marginTop;
+    width: $Maxwidth;
+    .header{
+        width: 60%;
+        margin: $marginAuto;
+        & h1{
+            margin: $marginAuto;
+            font-size: 2rem;
+        }
+        & p{
+            margin: $marginAuto;
+            margin-top: $marginTop;
+            text-align: center;
+        }
+    }
+}

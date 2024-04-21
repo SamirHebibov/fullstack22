@@ -1,0 +1,27 @@
+@use "./../abstracts/variables" as *;  //variables-i burada istifade etmek ucun use etdim 
+@use "./../abstracts/mixin" as *; //mixin-i burada istifade etmek ucun use etdim
+#section1{
+    width: $Maxwidth;
+    height: 6rem;
+    background-color: $bgcolorNavbar;    //buna variables deyer verdim 
+    .navbar{
+        height: 6rem;
+        width: $width;   //buna variables deyer verdim 
+        margin: $marginAuto;   //buna variables deyer verdim 
+        @include flex($justify: space-between); //buna mixin deyer verdim ve icinde center deyerini space-between olarag deyisdim
+    }
+    .navbar .Navbar .nav{
+        @include flex;
+        margin-right: $navmarginleft;  //buna variables deyer verdim  
+        & .nav-item{
+            margin-right: $navmarginleft;   //buna variables deyer verdim 
+            & .nav-link{
+                color: black;
+            }
+            & .nav-link:hover{
+                opacity: .7;
+                cursor: pointer;
+            }
+        }
+    }
+}

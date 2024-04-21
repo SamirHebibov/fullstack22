@@ -1,0 +1,83 @@
+@use "./../abstracts/variables" as *;  //variables-i burada istifade etmek ucun use etdim 
+@use "./../abstracts/mixin" as *; //mixin-i burada istifade etmek ucun use etdim
+@use "./../abstracts/extends" as *;  //extends-i burada istifade etmek ucun use etdim
+.card{
+    width: 20%;
+    margin-left: 10rem;
+    background-color: white;
+    position: relative;
+    @extend .Card;
+    & .image{
+        width: 100% ;
+        height: 13rem;
+        & img{
+            width: 100%;
+            object-fit: cover;
+            border-top-right-radius: .25rem;
+            border-top-left-radius: .25rem;
+        }
+    }
+    & .about-card, & .footer-card , & hr{
+        margin: 1rem;
+    }
+    & .about-card{
+        @extend %grid;
+        margin-top: $marginTop;
+        & p{
+            color: gray;
+        }
+    }
+    & hr{
+        color: gray;
+    }
+    & .footer-card{
+        @include flex2();
+        & .left{
+            @include flex2($flexDir:column);
+            & .price{
+                font-size: 2rem;
+                color: lightcoral;
+            }
+            & .time{
+                margin: 1rem 0;
+                color: gray;
+                
+            }
+        }
+        & .right{
+            & .stars{
+                color: lightcoral;
+            }
+            & .rating{
+                color:gray;
+                margin-top: 2rem;
+            }
+        }
+        
+    }
+}
+.button{
+    @include flex();
+
+    width: 8rem;
+    height: 3rem;
+    color: white;
+    border-radius: .25rem;
+    background-color: lightcoral;
+    position: absolute;
+    top: 25rem;
+    left: 16rem;
+    display: none;
+    transition: all .5s ease;
+}
+.card:hover + .button {
+    display: flex;
+}
+.button:hover{
+    top: 25.25rem;
+    left: 16.1rem;
+    height: 2.8rem;
+    width: 7.5rem;
+    display: flex;
+    background-color: coral;
+}
