@@ -1,0 +1,80 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+.about{
+    margin-top: 10rem;
+    background-color: $bggreen;
+    width: $maxwidth;
+    height: 54rem;
+    @extend %gridabout;
+
+    & .title{
+        grid-area: title;
+        margin: $marginAuto;
+        margin-top: 10rem;
+        @include star-light($top: -1.5rem, $margin: 2.5rem auto);
+        & .h{
+            text-align: $textalign;
+            & h1{
+                color: $bgwhite;
+                text-transform: $uppercase;
+                font-size: 4.5rem;
+                font-weight: 900;
+            }
+        }
+    }
+    & .content{
+        width: 50%;
+        margin: $marginAuto;
+        margin-top: 2rem;
+        grid-area: content;
+        @extend %gridcontent;
+        & .text1{
+            padding: 1rem;
+            grid-area: text1;
+            & p{
+                margin: 1rem;
+                color: $bgwhite;
+                line-height: 2.5rem;
+                font-size: 1.8rem;
+            }
+        }
+        & .text2{
+            padding: 1rem;
+            grid-area: text2;
+
+            & p{
+                margin: 1rem;
+                color: $bgwhite;
+                line-height: 2.5rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+    & .download{
+        grid-area: download;
+        margin-top: 5rem;
+        margin:$marginAuto;
+        & a{
+            color: $bgwhite;
+            font-size: 2rem;
+            border: 2px solid $bgwhite;
+            padding: 1.5rem 2.5rem;
+            border-radius: $borderRadius;
+            transition: all .2s;
+            & .download_icon{
+                grid-area: icon;  
+                margin-right: 1.7rem;
+            }
+            & .Free_Download{
+                grid-area: text;
+            }
+        }
+        & a:hover{
+            color: $bgdarkblack;
+            background-color: $bgwhite;
+        }
+    }
+}

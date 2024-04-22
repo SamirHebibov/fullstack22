@@ -1,0 +1,21 @@
+#contact .contact .contact_me {
+  display: grid;
+  grid-template-areas: "contact" "star";
+  grid-template-rows: 1fr 1fr;
+}
+
+#contact {
+  margin-top: 10rem;
+  width: 100%;
+  height: 80rem;
+}
+#contact .contact .contact_me .heading {
+  grid-area: contact;
+  text-align: center;
+}
+#contact .contact .contact_me .heading h1 {
+  color: #2c3d50;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 900;
+}/*# sourceMappingURL=contact.css.map */

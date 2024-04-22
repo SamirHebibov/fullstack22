@@ -1,0 +1,60 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 500;
+    & .container{
+        width: $maxwidth;
+        height: 10rem;
+        background-color: $bgblack;
+        @include flex();
+        & .navbar{
+            @extend grid;
+            height: 3rem;
+            width: $width;
+            & .menu{
+                display: none;
+            }
+            & .logo{
+                grid-area: logo;
+                font-size: 1.8rem;
+                color: $bgwhite;
+                text-transform: $uppercase;
+            } 
+            & .nav{
+                grid-area: navbar;
+                display: flex;
+                & .inner-nav
+                {
+                    margin: $marginAuto;
+                    margin-right: 8rem;
+                    & .nav-item
+                    {
+                        display: inline-block;
+                        margin-left: 2rem;
+                        & .nav-link{
+                            color: $bgwhite; 
+                            font-size: 1.6rem;
+                            text-transform: $uppercase;
+                            font-weight: 700;
+                            padding: 2rem 1.5rem;
+                            background-color: transparent;
+                            transition: all .2s;
+                        }
+                        & .nav-link:hover{
+                            background-color: $bggreen;
+                        }
+                        & .nav-link:focus{
+                            background-color: $bggreen;
+                            color: $bgwhite;
+                            border-radius: $borderRadius;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

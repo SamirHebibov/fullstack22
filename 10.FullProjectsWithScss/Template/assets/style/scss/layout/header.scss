@@ -1,0 +1,39 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+    
+.header{
+    width: $maxwidth;
+    background-color:$bggreen ;
+    height: 80rem;
+    @extend %gridheader;
+    & .image{  
+        grid-area: avatar;
+        margin: $marginAuto;
+        margin-top: 10rem;
+        & img{
+            width: 23rem;
+        }
+    }
+    & .header1{
+        grid-area: header;
+        margin: $marginAuto;
+        & h1{
+            color: $bgwhite;
+            font-size: 7rem;
+        }
+    }
+    @include star-light();
+    .star{
+        grid-area: star;
+    }
+    .text{
+        grid-area: job;
+        text-align: $textalign;
+        margin-top: -5rem; 
+        font-size: 3rem;
+        color: $bgwhite;
+    }
+}

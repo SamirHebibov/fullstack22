@@ -1,0 +1,30 @@
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+
+.form-group input, .form-group textarea {
+  border: none;
+  width: 100%;
+  display: block;
+  font-size: 2.4rem;
+}
+
+.form-group input, .form-group textarea:focus {
+  outline: 0;
+}
+
+.btn {
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=form.css.map */

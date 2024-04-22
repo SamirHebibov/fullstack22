@@ -1,0 +1,30 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+#contact{
+    margin-top: 10rem;
+    width: 100% ;
+    height: 80rem;
+    & .contact {
+        & .contact_me{
+            @extend %gridcontact;
+            & .heading{
+                grid-area: contact;
+                text-align: $textalign;
+                & h1{
+                    color: $bgblack;
+                    text-transform: $uppercase;
+                    font-size: 4.5rem;
+                    font-weight: 900;
+                }
+            }
+            @include star-dark();
+            & .star{
+                grid-area: star;
+                text-align: $textalign;
+            }
+        }
+    }
+}

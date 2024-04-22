@@ -1,0 +1,32 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+
+.form{
+    width: 50%;
+    margin: $marginAuto;
+}
+.form-group{
+   border-bottom: 1px solid $bggray;
+   padding-bottom: 3rem;
+   margin-bottom: 4rem;
+}
+.form-group input, .form-group textarea{
+   border: none;
+   width: $maxwidth;
+   display: block;
+   font-size: 2.4rem;
+}
+.form-group input, .form-group textarea:focus{
+   outline: 0;
+}
+.btn{
+    background-color: $bggreen;
+    color: $bgwhite;
+    padding: 2rem;
+    border: none;
+    border-radius:$borderRadius;
+    font-size: 1.6rem;
+}

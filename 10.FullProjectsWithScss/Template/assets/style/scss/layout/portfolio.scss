@@ -1,0 +1,64 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+.section1{
+    background-color: $bgwhite;
+    width: $maxwidth;
+    & .h1{
+        text-align: $textalign;
+        @extend %gridportfolio;
+        & .head{
+            margin-top: 7rem;
+            grid-area: portfolio;
+            & h1{
+                font-size: 4.5rem;
+                color: $bgblack;
+                font-weight: 900;
+            }
+        }
+    }
+    .cards{
+        width: 75% ;
+        margin: $marginAuto;
+        margin-top: 5rem ;
+        @extend %gridcards;
+
+        &.card{
+            width: $maxwidth;
+            border-radius:$borderRadius ;
+            position: relative;
+            & img{
+                width: $maxwidth;
+                border-radius:$borderRadius ;
+            }
+            & .up-image{
+
+                background-color: transparent;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: background-color .3s;
+
+                & .icon{
+                    color: transparent;
+                }
+            }
+            .up-image:hover{
+                background-color: $bggreen;
+                opacity: .95;
+                border-radius: $borderRadius;
+                & .icon{
+                    color: $bgwhite;
+                    font-size: 7rem;
+                    position: absolute ;
+                    top:calc(50% - 7rem  / 2) ;
+                    left: calc(50% - 7rem  / 2) ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+.footer{ 
+    background-color: $bgblack;
+    height: 5rem;
+    & p{
+        text-align: $t;
+        line-height: 5rem;
+        color: $bgwhite;
+        font-size: 1.4rem;
+    }
+}
+

@@ -1,0 +1,49 @@
+@mixin flexAlignJustify($justify: center, $align:center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin star-light($top:-1.5rem, $margin:0 auto){
+    .star{
+        position: relative;
+    }
+    .star hr{
+        border: none;
+        border-top: .4rem solid $bgwhite;
+        max-width: 25rem;
+        margin:$margin;
+        padding: .5rem;
+    }
+    .star .fa-star{
+        color: $bgwhite;
+        font-size: 3rem;
+        position: absolute;
+        left: calc(50% - 5rem / 2);
+        top: $top;
+        background-color:$bggreen; 
+        padding: 0 1rem;
+    }
+}
+
+@mixin star-dark($top:1rem, $margin:2.5 auto){
+    .star{
+        position: relative;
+    }
+    .star hr{
+        border: none;
+        border-top: .4rem solid $bgblack;
+        max-width: 25rem;
+        margin:$margin;
+        padding: .5rem;
+    }
+    .fa-star{
+        color: $bgblack;
+        font-size: 3rem;
+        position: absolute;
+        left: calc(50% - 5rem / 2);
+        top: $top;
+        background-color: $bgwhite; 
+        padding: 0 1rem;
+    }
+}

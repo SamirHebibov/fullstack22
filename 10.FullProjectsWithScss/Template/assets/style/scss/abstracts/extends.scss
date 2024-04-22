@@ -1,0 +1,63 @@
+%grid{
+    display: grid; 
+    grid-template-areas: 
+    "logo navbar";
+    grid-template-columns: 1fr 3fr;
+}
+%gridheader{
+    display: grid;
+    grid-template-areas: 
+    "avatar"
+    "header"
+    "star"
+    "job";
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+}
+%gridportfolio{
+    display: grid;
+    grid-template-areas: 
+    "portfolio"
+    "star";
+    grid-template-rows: 2fr 1fr;
+}
+%gridcards{
+    display: grid;
+    grid-template-columns: auto auto auto  ;
+    grid-template-rows: auto auto ;
+    gap: 5rem;
+}
+%gridabout{
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "content"
+    "download"; 
+    grid-template-columns: auto ;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+%gridcontent{
+    display: grid;
+    grid-template-areas: 
+    "text1 text2";
+    grid-template-columns:  auto auto;
+}
+%griddownload{
+    display: grid;
+    grid-template-areas:
+    "icon text";
+}
+
+%gridcontact{
+    display: grid;
+    grid-template-areas: 
+    "contact"
+    "star";
+    grid-template-rows: 1fr 1fr ;
+}
+%gridcontacts{
+    display: grid;
+    grid-template-areas:
+    "row1 row2 row3";
+    grid-template-columns: 1fr 1fr 1fr;
+}

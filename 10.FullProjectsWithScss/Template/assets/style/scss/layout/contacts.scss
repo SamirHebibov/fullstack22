@@ -1,0 +1,86 @@
+@use "./../base/color.scss" as *;
+@use "./../abstracts/mixin.scss" as *;
+@use "./../abstracts/variables.scss" as *;
+@use "./../abstracts/extends.scss" as *;
+
+#contacts{
+    background-color:$bgblack;
+    width: $maxwidth;
+}
+.contacts{
+    padding-top: 7rem;
+    width: $width;
+    height: 25rem;
+    margin: $marginAuto;
+    @extend %gridcontacts;
+    & .row1{
+        width: 60%;
+        grid-area: row1;
+        margin:$marginAuto;
+        text-align:$textalign;
+
+        & h1{
+            color: $bgwhite;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        & p{
+            color: $bgwhite;
+            font-size: 1.8rem;
+        }
+    }
+    & .row2{
+        width: 60%;
+        grid-area: row2;
+        margin:$marginAuto;
+        text-align:$textalign;
+
+        & h4{
+            text-transform: $uppercase;
+            color: $bgwhite;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            margin-right: auto;
+        }
+        & ul{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            & li{
+                & .button{
+                    background-color: transparent;
+                    color:  $bgwhite;
+                    font-size: 2rem;
+                    padding: 1rem;
+                    border: 2px solid  $bgwhite;
+                    border-radius: 50%;
+                    transition: all .2s;
+                }
+                & .button:hover{
+                    background-color: $bgwhite;
+                    color: $bgblack;
+                }
+            }
+        }
+    }
+
+    & .row3{
+        width: $width;
+        grid-area: row3;
+        margin: $marginAuto;
+        text-align: $textalign;
+        & h1{
+            text-transform: $uppercase;
+            color: $bgwhite;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        & p{
+            color: $bgwhite;
+            font-size: 1.8rem;
+            & a{
+                color: $bggreen;
+            }
+        }
+    }
+    
+}
