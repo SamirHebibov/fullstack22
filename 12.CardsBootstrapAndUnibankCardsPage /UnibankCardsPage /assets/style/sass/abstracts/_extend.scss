@@ -1,0 +1,34 @@
+@use "../base/color" as *;
+@use "./variables" as *; 
+
+%begin{
+      width: $width;
+      margin: $marginAuto;
+}
+%header{
+      font-weight: 800;
+      margin-bottom: 3rem;
+      color: #ff6400;
+      font-size: 3.2rem;
+}
+%image{
+      height: $maxwidth;
+      width: $maxwidth;
+      object-fit: cover;
+}
+%card-names{
+      font-weight: 800;
+      font-size: 2.4rem;
+      color: $black;
+}
+%card-text{
+      font-weight: 400;
+      font-size: 1.4rem;
+      color: $black;
+}
+%card-more{
+      padding: 1.4rem 3rem;
+      font-size: 1.4rem;
+      background: #ff6400;
+      border-radius: 2.5rem;
+}

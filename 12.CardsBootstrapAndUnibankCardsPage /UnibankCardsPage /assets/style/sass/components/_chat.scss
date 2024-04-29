@@ -1,0 +1,21 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixin" as *;
+@use "./../abstracts/extend" as *;
+.chat {
+  @include flexAlignJustify;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #ff8001;
+  font-size: 2.5rem;
+  color: $white;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.2s linear;
+}
+.chat:hover {
+  width: 6.25rem;
+  height: 6.25rem;
+}

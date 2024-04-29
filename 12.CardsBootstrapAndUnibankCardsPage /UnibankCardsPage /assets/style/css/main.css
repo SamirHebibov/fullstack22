@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Metrophobic", sans-serif;
+  height: 200rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#footer .container, #contact .contact, #about .about, #cards .container1, #cards .container2, #herosection .container, #header .container, #navbar .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#cards .container1 .cards-header, #cards .container2 .cards-header, #herosection .container .header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img, #herosection .container .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1, #herosection .container .card .card-about .card-header .card-name {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p, #herosection .container .card .card-about .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a, #herosection .container .card .card-about .card-header .card-more {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: #ff8001;
+  font-size: 2.5rem;
+  color: #fff;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all 0.2s linear;
+}
+
+.chat:hover {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+#footer .container, #contact .contact, #about .about, #cards .container1, #cards .container2, #herosection .container, #header .container, #navbar .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#cards .container1 .cards-header, #cards .container2 .cards-header, #herosection .container .header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img, #herosection .container .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1, #herosection .container .card .card-about .card-header .card-name {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p, #herosection .container .card .card-about .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a, #herosection .container .card .card-about .card-header .card-more {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+.help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #ff4400;
+  font-size: 2rem;
+  color: #fff;
+  outline: 2px solid #ff4400;
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  transition: all 0.3s ease;
+}
+
+.help:hover {
+  width: 4.5rem;
+  height: 4.5rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+
+#navbar {
+  background-color: #fafafa;
+  width: 100%;
+}
+#navbar .container {
+  height: 6rem;
+  margin: 1 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container .nav-logo {
+  width: 2.5rem;
+}
+#navbar .container .nav-logo img {
+  width: 100%;
+}
+#navbar .container .navbar {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container .navbar .nav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container .navbar .nav1 .nav-item {
+  margin-right: 3rem;
+}
+#navbar .container .navbar .nav1 .nav-item .nav-link {
+  font-size: 1.2rem;
+  color: #363636;
+  font-weight: 300;
+}
+#navbar .container .navbar .nav2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container .navbar .nav2 .nav-inner1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1rem;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#navbar .container .navbar .nav2 .nav-inner1 .nav-inner-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+#navbar .container .navbar .nav2 .nav-inner1 .nav-inner-item .nav-inner-link {
+  padding: 1rem 3rem;
+  line-height: 3.5rem;
+  font-size: 1.2rem;
+  color: #363636;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+#navbar .container .navbar .nav2 .nav-inner1 .nav-inner-link:focus {
+  border: 1px solid #ff7900;
+  color: #ff7900;
+}
+#navbar .container .navbar .nav2 .nav-inner2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navbar .container .navbar .nav2 .nav-inner2 .nav-inner-item {
+  margin-right: 1rem;
+}
+#navbar .container .navbar .nav2 .nav-inner2 .nav-inner-item .nav-inner-link {
+  font-size: 1.2rem;
+  color: #363636;
+  font-weight: 700;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 14px -8px rgba(0, 0, 0, 0.3);
+}
+#navbar .container .navbar .nav2 .nav-inner2 .nav-inner-item .theme {
+  background-color: #323232;
+  color: #fff;
+}
+
+#footer .container, #contact .contact, #about .about, #cards .container1, #cards .container2, #herosection .container, #navbar .container, #header .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#cards .container1 .cards-header, #cards .container2 .cards-header, #herosection .container .header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img, #herosection .container .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1, #herosection .container .card .card-about .card-header .card-name {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p, #herosection .container .card .card-about .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a, #herosection .container .card .card-about .card-header .card-more {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+#header {
+  width: 100%;
+}
+#header .container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .container .header-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .header-list .header-item {
+  margin-right: 3rem;
+}
+#header .container .header-list .header-item .header-link {
+  font-size: 1.7rem;
+  color: #000;
+  font-weight: 500;
+}
+#header .container .phone {
+  margin-right: 1rem;
+  width: 8rem;
+  height: 4.5rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 2.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .container .phone i {
+  font-size: 2rem;
+  color: #ff6b00;
+  margin-right: 0.5rem;
+}
+#header .container .phone span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#footer .container, #contact .contact, #about .about, #cards .container1, #cards .container2, #navbar .container, #header .container, #herosection .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#cards .container1 .cards-header, #cards .container2 .cards-header, #herosection .container .header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img, #herosection .container .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1, #herosection .container .card .card-about .card-header .card-name {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p, #herosection .container .card .card-about .card-text {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a, #herosection .container .card .card-about .card-header .card-more {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+#herosection {
+  width: 100%;
+  margin-top: 3rem;
+}
+#herosection .container .card {
+  border-radius: 1rem;
+  width: 100%;
+  padding: 6rem;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#herosection .container .card .image {
+  box-shadow: -14px 14px 58px rgba(0, 0, 0, 0.3);
+  width: 30%;
+  height: 20rem;
+  border-radius: 1.5rem;
+}
+#herosection .container .card .image img {
+  border-radius: 1.5rem;
+}
+#herosection .container .card .card-about {
+  width: 60%;
+  margin-left: 6rem;
+}
+#herosection .container .card .card-about .card-header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#herosection .container .card .card-about .card-header .card-more a {
+  color: #fff;
+}
+#herosection .container .card .card-about .card-text {
+  margin-bottom: 2.5rem;
+}
+#herosection .container .card .card-about .card-opportunities {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#herosection .container .card .card-about .card-opportunities .opportunity {
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#herosection .container .card .card-about .card-opportunities .opportunity .icon {
+  margin-right: 1rem;
+  font-size: 3rem;
+  color: #ff6400;
+}
+
+#footer .container, #contact .contact, #about .about, #navbar .container, #header .container, #herosection .container, #cards .container1, #cards .container2 {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#herosection .container .header, #cards .container1 .cards-header, #cards .container2 .cards-header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#herosection .container .card .image img, #cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#herosection .container .card .card-about .card-header .card-name, #cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-text, #cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-header .card-more, #cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+#cards {
+  margin-top: 3rem;
+  width: 100%;
+}
+#cards .container1 .cards, #cards .container2 .cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#cards .container1 .cards .card, #cards .container2 .cards .card {
+  padding: 6rem;
+  height: 55rem;
+  margin-bottom: 3rem;
+  width: 49%;
+  background-color: #fafafa;
+  border-radius: 1rem;
+}
+#cards .container1 .cards .card .image, #cards .container2 .cards .card .image {
+  width: 70%;
+  border-radius: 1rem;
+}
+#cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img {
+  border-radius: 1rem;
+  box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, 0.24);
+}
+#cards .container1 .cards .card .text, #cards .container2 .cards .card .text {
+  height: 15rem;
+  margin-top: 3rem;
+}
+#cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p {
+  margin-top: 2rem;
+  line-height: 3rem;
+}
+#cards .container1 .cards .card .more, #cards .container2 .cards .card .more {
+  margin-top: 3rem;
+}
+#cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a {
+  color: #fff;
+}
+#cards .container1 .cards .card .more .partnyor, #cards .container2 .cards .card .more .partnyor {
+  margin-left: 1rem;
+  background-color: #fafafa;
+  color: #969696;
+  border: 1px solid #e1e1e1;
+}
+
+#footer .container, #contact .contact, #navbar .container, #header .container, #herosection .container, #cards .container1, #cards .container2, #about .about {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#herosection .container .header, #cards .container1 .cards-header, #cards .container2 .cards-header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#herosection .container .card .image img, #cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#herosection .container .card .card-about .card-header .card-name, #cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-text, #cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-header .card-more, #cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+#about {
+  margin-top: 10rem;
+  width: 100%;
+}
+#about .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+#about .about .menu {
+  height: 20rem;
+}
+#about .about .menu .head {
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 600;
+  line-height: 3.5rem;
+}
+#about .about .menu .menu-item {
+  font-size: 1.2rem;
+}
+#about .about .menu .menu-item a {
+  color: #000;
+  line-height: 3.5rem;
+  font-weight: 300;
+}
+
+#footer .container, #navbar .container, #header .container, #herosection .container, #cards .container1, #cards .container2, #about .about, #contact .contact {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#herosection .container .header, #cards .container1 .cards-header, #cards .container2 .cards-header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#herosection .container .card .image img, #cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#herosection .container .card .card-about .card-header .card-name, #cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-text, #cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-header .card-more, #cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+#contact {
+  margin-top: 6rem;
+  width: 100%;
+}
+#contact .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#contact .contact .social-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#contact .contact .social-list .social-item {
+  margin-right: 1.2rem;
+}
+#contact .contact .social-list .social-item .social-link {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #a1a1a1;
+  text-align: center;
+}
+#contact .contact .social-list .social-item .social-link i {
+  line-height: 3rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#contact .contact .privacy {
+  font-size: 1.2rem;
+}
+#contact .contact .privacy a {
+  color: #000;
+  font-weight: 300;
+}
+#contact hr {
+  margin: 3rem auto;
+  width: 70%;
+  color: #ebeced;
+}
+
+#navbar .container, #header .container, #herosection .container, #cards .container1, #cards .container2, #about .about, #contact .contact, #footer .container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#herosection .container .header, #cards .container1 .cards-header, #cards .container2 .cards-header {
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: #ff6400;
+  font-size: 3.2rem;
+}
+
+#herosection .container .card .image img, #cards .container1 .cards .card .image img, #cards .container2 .cards .card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#herosection .container .card .card-about .card-header .card-name, #cards .container1 .cards .card .text h1, #cards .container2 .cards .card .text h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-text, #cards .container1 .cards .card .text p, #cards .container2 .cards .card .text p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #000;
+}
+
+#herosection .container .card .card-about .card-header .card-more, #cards .container1 .cards .card .more a, #cards .container2 .cards .card .more a {
+  padding: 1.4rem 3rem;
+  font-size: 1.4rem;
+  background: #ff6400;
+  border-radius: 2.5rem;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 3rem;
+  height: 10rem;
+}
+#footer .container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#footer .container h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#footer .container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+#footer .container .partnyors {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#footer .container .partnyors .partnyor-logos {
+  width: 25%;
+}
+#footer .container .partnyors .partnyor-logos img {
+  width: 50%;
+}

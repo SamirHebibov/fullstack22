@@ -1,0 +1,25 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *; 
+@use "../abstracts/mixin" as *; 
+@use "./../abstracts/extend" as *; 
+.help{
+      @include flexAlignJustify;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      border: 2px solid $white;
+      background-color: #ff4400;
+      font-size: 2rem;
+      color: $white;
+      outline: 2px solid #ff4400;
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      transition: all .3s ease;
+}
+.help:hover{
+      width: 4.5rem;
+      height: 4.5rem;
+      bottom: 1.25rem;
+      left: 1.25rem;
+}

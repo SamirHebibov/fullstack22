@@ -1,0 +1,62 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *; 
+@use "../abstracts/mixin" as *; 
+@use "./../abstracts/extend" as *; 
+
+#cards{
+      margin-top: 3rem;
+      width: $maxwidth;
+      & .container1, .container2 {
+            @extend %begin; 
+            & .cards-header{
+                  @extend %header; 
+            }
+            & .cards{
+                  width: 100%;
+                  @include flexAlignJustify($justify:space-between);
+                  flex-wrap: wrap;
+                  & .card{
+                        padding:6rem;
+                        height: 55rem;
+                        margin-bottom: 3rem;
+                        width: 49%;
+                        background-color: $colorgray;
+                        border-radius: 1rem;
+                        & .image{
+                              width: 70%;
+                              border-radius: 1rem;
+                              & img{
+                                    border-radius: 1rem;
+                                    box-shadow: -15px 15px 30px 0 rgba(0, 0, 0, .24);
+                                    @extend %image;
+                              }
+                        }
+                        & .text{
+                              height: 15rem;
+                              margin-top: 3rem;
+                              & h1{
+                                    @extend %card-names; 
+                              }
+                              & p{
+                                    @extend %card-text;
+                                    margin-top: 2rem;
+                                    line-height: 3rem;
+                              }
+                        }
+                        & .more{
+                              margin-top: 3rem;
+                              & a{
+                                    @extend %card-more; 
+                                    color: $white;
+                              }
+                              & .partnyor{
+                                    margin-left: 1rem;
+                                    background-color: $colorgray;
+                                    color:#969696;
+                                    border:1px solid #e1e1e1;
+                              }
+                        }
+                  }
+            }
+      }
+}

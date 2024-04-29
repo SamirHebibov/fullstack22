@@ -1,0 +1,29 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *; 
+@use "../abstracts/mixin" as *; 
+@use "./../abstracts/extend" as *; 
+#about{
+      margin-top: 10rem;
+      width: $maxwidth;
+      & .about{
+            @extend %begin;
+            @include flexAlignJustify($justify:space-between, $align:start);
+            & .menu{
+                  height: 20rem;
+                  & .head{
+                        font-size: 1.4rem;
+                        color: $black;
+                        font-weight: 600;
+                        line-height: 3.5rem;
+                  }
+                  & .menu-item{
+                        font-size: 1.2rem;
+                        & a{
+                              color: $black;
+                              line-height: 3.5rem;
+                              font-weight: 300;
+                        }
+                  }
+            }
+      }
+}

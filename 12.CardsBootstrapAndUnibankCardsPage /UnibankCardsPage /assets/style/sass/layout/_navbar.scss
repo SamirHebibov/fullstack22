@@ -1,0 +1,80 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *; 
+@use "../abstracts/mixin" as *; 
+
+#navbar{
+      background-color: $colorgray;
+      width: $maxwidth;
+      & .container{
+            @extend %begin;
+            height: 6rem;
+            margin: 1 auto;
+            @include flexAlignJustify($justify: space-between);
+            & .nav-logo{
+                  width: 2.5rem;
+                  & img{
+                        width: 100%;
+                  }
+            }
+            & .navbar{
+                  width: 95%;
+                  @include flexAlignJustify($justify: space-between);
+                  & .nav1{
+                        @include flexAlignJustify($justify: space-between);
+                        & .nav-item{
+                              margin-right: 3rem;
+                              & .nav-link{
+                                    font-size: $navlinksfontSize;
+                                    color: $colorlightblack;
+                                    font-weight: $navlinksfontweight;
+                              }
+                        }
+                  }
+                  & .nav2{
+                        @include flexAlignJustify($justify: space-between);
+                        
+                        & .nav-inner1{
+                              @include flexAlignJustify($justify: space-between);
+                              margin-right: 1rem;
+                              box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
+                              & .nav-inner-item{
+                                    text-align: $textalign; 
+                                    background-color: $white;
+                                    border-radius: .5rem;
+                                    & .nav-inner-link{
+                                          padding: 1rem 3rem;
+                                          line-height: 3.5rem;
+                                          font-size: $navlinksfontSize;
+                                          color: $colorlightblack;
+                                          font-weight: 400;
+                                          border-radius: .5rem;
+                                    }
+                              }
+                              & .nav-inner-link:focus {
+                                    border: 1px solid $lightorange;
+                                    color:$lightorange; 
+                              }
+                        }
+                        & .nav-inner2{
+                              @include flexAlignJustify($justify: space-between);
+                              & .nav-inner-item{
+                                    margin-right: 1rem;
+                                    & .nav-inner-link{
+                                          font-size: $navlinksfontSize;
+                                          color: $colorlightblack;
+                                          font-weight: 700;
+                                          padding: 1rem;
+                                          background-color: $white;
+                                          border-radius: .5rem;
+                                          box-shadow: 0 2px 14px -8px rgba(0, 0, 0, .3);
+                                    }
+                                    & .theme{
+                                          background-color: #323232;
+                                          color: $white;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

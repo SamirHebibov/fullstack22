@@ -1,0 +1,67 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *; 
+@use "../abstracts/mixin" as *; 
+@use "./../abstracts/extend" as *; 
+
+#herosection{
+      width: $maxwidth;
+      margin-top: 3rem;
+      & .container{
+            @extend %begin;
+            & .header{
+                  @extend %header; 
+            }
+            & .card{
+                  border-radius: 1rem;
+                  width: $maxwidth;
+                  padding: 6rem;
+                  background-color: $colorgray; 
+                  @include flexAlignJustify($justify:start); 
+                  & .image{
+                        box-shadow:  -14px 14px 58px rgba(0, 0, 0, .3);
+                        width: 30%;
+                        height: 20rem;
+                        border-radius: 1.5rem;
+                        & img{
+                              @extend %image;
+                              border-radius: 1.5rem;
+                        }
+                  }
+                  & .card-about{
+                        width: 60%;
+                        margin-left: 6rem;
+                        & .card-header{
+                              margin-bottom: 1rem;
+                              @include flexAlignJustify($justify:space-between , $align: flex-end);
+                              & .card-name{
+                                    @extend %card-names;
+                              }
+                              & .card-more{
+                                    @extend %card-more; 
+                                    & a{
+                                          color: $white;
+                                    }
+                              }
+                        }
+                        & .card-text{
+                              @extend %card-text;
+                              margin-bottom: 2.5rem;
+                        }
+                        & .card-opportunities{
+                              margin-top: 3rem;
+                              @include flexAlignJustify($justify:space-between);
+                              & .opportunity{                              
+                                    font-weight: 400;
+                                    font-size: 1.6rem;
+                                    @include flexAlignJustify;
+                                    & .icon{
+                                          margin-right: 1rem;
+                                          font-size: 3rem;
+                                          color: $colororange;
+                                    }
+                              }
+                        }
+                  }
+            }
+      }
+}

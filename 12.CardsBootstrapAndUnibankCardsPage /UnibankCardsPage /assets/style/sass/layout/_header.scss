@@ -1,0 +1,40 @@
+@use "../base/color" as *;
+@use "../abstracts/variables" as *; 
+@use "../abstracts/mixin" as *; 
+@use "./../abstracts/extend" as *; 
+#header{
+      width: $maxwidth;
+      & .container{
+            margin-top: 2rem;
+            @extend %begin; 
+            @include flexAlignJustify($justify: space-between);
+            & .header-list {
+                  @include flexAlignJustify; 
+                  & .header-item{
+                        margin-right: 3rem;
+                        & .header-link{
+                              font-size: 1.7rem;
+                              color: $black;
+                              font-weight: 500;
+                        }
+                  }
+            }
+            & .phone{
+                  margin-right: 1rem;
+                  width: 8rem;
+                  height: 4.5rem;
+                  border: 1px solid #f2f2f2;
+                  border-radius: 2.25rem;
+                  @include flexAlignJustify; 
+                  & i{
+                        font-size: 2rem;
+                        color:#ff6b00 ;
+                        margin-right: .5rem;
+                  }
+                  & span{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                  }
+            }
+      }
+}
