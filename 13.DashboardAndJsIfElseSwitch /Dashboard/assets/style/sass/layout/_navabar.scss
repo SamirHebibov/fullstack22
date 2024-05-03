@@ -31,7 +31,31 @@
                   }
             }  
             & .right{
-                  @include flexAlignJustify($justify:start, $align:baseline);
+                  border: 1px solid #212529;
+                  border-radius: .75rem; 
+                  @include flexAlignJustify;
+                  @extend %ButtonHoverTransition; 
+                  & .inner{
+                        margin-left: 1rem;
+                        font-size: 1.4rem;
+                  }
+                  & i{
+                        font-size: 1.6rem;
+                  }
+                  & span{
+                        padding: .5rem .7rem;
+                        background-color: #212529;
+                        color: #fff;
+                        border-radius: 50% 50%;
+                        margin-right: 1rem;
+                  }
+                  & p{
+                        margin-top: 1rem;
+                        font-size: 1.6rem;
+                  }
+            }
+            & .right:hover{
+                  @extend %ButtonHover; 
             }
       }
 }

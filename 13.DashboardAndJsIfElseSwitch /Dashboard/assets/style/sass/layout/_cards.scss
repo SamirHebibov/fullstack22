@@ -1,0 +1,75 @@
+@use "./../abstract/extend" as *; 
+@use "./../abstract/mixin" as *; 
+@use "./../abstract/variables" as *; 
+@use "./../base/color" as *; 
+#cards{
+      width: $maxwidth;
+      margin: $marginAuto;
+      & .container{
+            margin-top: 6rem;
+            @include flexAlignJustify;
+            flex-wrap: wrap;
+            gap: 5rem; 
+            @extend %begin; 
+            & .card{
+                  width: 22%;
+                  height: 40rem;
+                  border-radius: .5rem;
+                  position: relative;
+                  .image{
+                        border-top-right-radius: .5rem;
+                        border-top-left-radius: .5rem;
+                        background-color: #dfe1e7;
+                        @include flexAlignJustify;
+                        width: 100%;
+                        height: 50%;
+                        color: #8f9297;
+                        & img{
+                              border-top-right-radius: .5rem;
+                              border-top-left-radius: .5rem;
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                        }
+                        
+                  }
+                  .content{
+                        height: 50%;
+                        @include flexAlignJustify($justify:space-evenly); 
+                        flex-direction: column;
+                        .header{
+                              height: 35%;
+                              @include flexAlignJustify($justify:start); 
+                              flex-direction: column;
+                        }
+                        .button{
+                              font-size: 1.8rem; 
+                              @include flexAlignJustify;
+                              height:4rem ;
+                              width: 12rem;
+                              border: 1px solid #212529;
+                              border-radius: .75rem; 
+                              @extend %ButtonHoverTransition; 
+
+                        }
+                        .button:hover{
+                              @extend %ButtonHover; 
+
+                        }
+                  }
+                  .sale{
+                        font-size: 1.2rem;
+                        position: absolute;
+                        top: 1rem;
+                        right: 1rem;
+                        background-color: black;
+                        color: white;
+                        width: 4rem;
+                        height: 2rem;
+                        line-height: 2rem;
+                        text-align: $textalign;
+                        border-radius: .5rem;
+                  }
+            }
+      }
+}

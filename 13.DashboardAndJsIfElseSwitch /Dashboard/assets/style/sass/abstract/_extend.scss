@@ -4,3 +4,11 @@
       $width: 70%; 
       $marginAuto: 0 auto; 
 }
+%ButtonHover{
+      color: #fff;
+      background-color: #212529;
+      cursor: pointer;
+}
+%ButtonHoverTransition{
+      transition: all .3s ease;
+}

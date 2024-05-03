@@ -1,0 +1,26 @@
+@use "./../abstract/extend" as *; 
+@use "./../abstract/mixin" as *; 
+@use "./../abstract/variables" as *; 
+@use "./../base/color" as *; 
+#header{
+      width: $maxwidth;
+      height: 30rem;
+      background-color: #212529;
+      @include flexAlignJustify;
+
+      .container{
+            @extend %begin; 
+            @include flexAlignJustify($justify:space-around); 
+            flex-direction: column;
+            height: 40%; 
+            & h1{ 
+                  color: #ffffff;
+                  font-size: 5rem;
+                  font-weight: 700;
+            }
+            & p{
+                  color: #919294;
+                  font-size: 1.8rem;
+            }
+      }
+}

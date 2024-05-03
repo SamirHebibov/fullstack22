@@ -1,0 +1,20 @@
+@use "./../abstract/extend" as *; 
+@use "./../abstract/mixin" as *; 
+@use "./../abstract/variables" as *; 
+@use "./../base/color" as *; 
+#footer{
+      height: 10rem;
+      background-color: #212529;
+      margin-top: 6rem;
+      width: $maxwidth;
+      .container{
+            height: 100%; 
+            @include flexAlignJustify; 
+            width: $width;
+            margin: $marginAuto;
+            p{
+                  color: white;
+                  font-size: 1.6rem;
+            }
+      }
+}
