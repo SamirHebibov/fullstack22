@@ -69,3 +69,132 @@
 
 
 // task8
+// let n = Number(prompt("ededi daxil edin:"));
+// let sum = 0;
+// let hasil = 1; 
+// let count = 0;
+// while(n>=1){
+//       sum = sum+Math.floor(n%10);
+//       hasil = hasil*Math.floor(n%10);
+//       n/=10;
+//       count++;
+// }
+// console.log("ededin toplami: "+ sum + " ededin reqemleri hasili: " + hasil + " ededi orta: " + sum/count);
+
+
+// task9
+// let n = Number(prompt("ededi daxil edin:"));
+// let i= 0; 
+// while(i<=n){
+//       if(n%i==0){
+//             for (let j = 0; j <= Math.sqrt(i); j++) {
+//                   if(i%j==0){
+//                         break; 
+//                   }
+//                   else{
+//                         console.log(i);
+//                   }
+//             }
+//       }
+//       i++; 
+// }
+
+
+// task10
+// let n = Number(prompt("ededi daxil edin:"));
+// let i= 0; 
+// let count =0; 
+// while(i<=n){
+//       if(n%i==0){
+//             for (let j = 0; j <= Math.sqrt(i); j++) {
+//                   if(i%j==0){
+//                         break; 
+//                   }
+//                   else{
+//                         count++;
+//                   }
+//             }
+//       }
+//       i++; 
+// }
+// console.log(count);
+
+
+// task11
+// let arr = [1,4,5,2,4,51,352,5,1,42]; 
+// for (let i = 0; i < arr.length; i++) {
+//       if(arr[i]%2!=0){
+//             console.log(i);
+//       }
+// }
+
+
+// task12
+// let arr = [1,4,5,2,4,51,352,5,1,42]; 
+// for (let i = 0; i < arr.length; i++) {
+//       if(i%2!=0){
+//             console.log(arr[i]);
+//       }
+// }
+
+// task13
+// let arr = [1,4,5,2,4,51,32,5,1,42]; 
+// let max=0
+// for (let i = 0; i < arr.length; i++) {
+//       if(arr[i]%2==0){
+//             if(arr[i]>max){
+//                   max=arr[i];
+//             }
+//       }
+// }
+// console.log(max);
+
+
+// task14
+// let arr = [1,4,5,2,4,51,32,-6,5,1,42]; 
+// let min = 0;
+// for(let i = 0; i < arr.length; i++){
+//       if(arr[i]<min){
+//             min=i; 
+//       }
+// }
+// console.log(min);
+
+
+
+// task15
+// let arr = [1,4,5,2,4,51,32,-6,5,1,42]; 
+// let min = arr[0];
+// let max = arr[0];
+// for(let i = 0; i <= arr.length; i++){
+//       if(arr[i]<min){
+//             min=arr[i]; 
+//       }
+//       else if(arr[i]>max){
+//             max=arr[i]; 
+//       }
+// }
+// let a ; 
+// a = min; 
+// min = max; 
+// max = a; 
+// console.log(min , max);
+
+
+// task16 (bu task yarida qaldi)
+let arr = [1,4,5,2,4,51,32,5,1,42]; 
+let min = arr[0];
+let max = arr[0];
+for(let i = 0; i <= arr.length; i++){
+      if(arr[i]<min && arr[i]%2==0){
+            min=arr[i]; 
+      }
+      else if(arr[i]>max && arr[i]%2!=0){
+            max=arr[i]; 
+      }
+}
+let a ; 
+a = min; 
+min = max; 
+max = a; 
+console.log(min , max);
