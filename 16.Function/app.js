@@ -146,16 +146,15 @@ const data = [
 // console.log(OlkeAdlari());
 
 
-// task2(tam deyil)
+// task2
 // function OlkeHerf() {
 //       let olkeherf = [];
 //       for (let i = 0; i < data.length; i++) {
-//             for (let j = 0; j < data[i].country.length; j++) {
-//                   if(data[i][j] == "A"){
-//                         olkeherf.push(data[i].country[j]);
-//                   }
+//             if(data[i].country[0] == "A"){
+//                   olkeherf.push(data[i].country);
 //             }
 //       }
+      
 //       return olkeherf;
 // }
 // console.log(OlkeHerf());
